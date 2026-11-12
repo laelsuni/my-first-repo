@@ -1,0 +1,43 @@
+Create customize Git workflow
+
+Set username: git config --global user.name "laelsuni"
+Set email: git config --global user.email "ella@suni-wpt.com"
+See configuaration setting created: git config --list
+Create alias for a command: git config --global alias.i init (now git init == git i)
+Create a directory: mkdir project1 (created a folder called project1)
+Enter a directory: cd project1
+Activate a directory: git init
+Check directory status: git status
+Create a new file: ni newfile.md (file created but not added to staging area)
+Add file to staging area: git add
+	Adding all files: git add .
+	Adding a specific file: git add newfile.md
+Commit changes: git commit -m "this is the change"
+
+Get a file from a remote repository(clone): git clone https://linkOfTheRepository.com
+
+Create a new branch in a repository: git checkout -b branchname
+See all the branches: git branch
+Go back to any branch: git switch main (here go back to main)
+
+Push changes made to the remote repository: git push origin update-name
+Return changes made in a remote repository: git pull
+See changes made in branch we're on: git show
+Delete branch locally: git branch -d update-name
+delete branch remotely: git push --delete origin update-name
+
+GitHub workflow
+git clone
+git checkout -b newbranch
+ git add .
+git commit -m "message"
+git push
+open a PR (pull request)
+merge PR and delete branch
+
+Fork a repo: add modification to another repo without affecting that repo
+
+choosealicence.com: to choose the right license for your repo
+
+gitignore file is a plain text file placed in a Git repository's root directory that tells Git which untracked files and folders to exclude from version control.
+Go to toptal.com to create gitignore file
